@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Dashboard</title>
+
+    <!-- Link per icone bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link per funzionamento bootstrap version 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
+
     <header>
+
+        <!-- Navbar gestito da bootstrap -->
         <nav class="navbar navbar-expand-lg bg-dark mb-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -47,12 +54,20 @@
         </nav>
     </header>
 
+    <!-- Sezione con container per allineare Catalogo libri e card laterali -->
+    <section class="container-fluid d-flex flex-nowrap">
 
-    <section>
+        <!-- Inizio container -->
         <div class="container border-primary">
+
+            <!-- Inizio container flex -->
             <div class="row mb-5">
+
+                <!-- Titolo -->
                 <h1 class="fs-2 text fw-normal">Catalogo libri</h1>
             </div>
+
+            <!-- Header lista -->
             <div class="row fs-6 text fw-bolder p-3">
                 <div class="col-6">Titolo</div>
                 <div class="col-3">Data prestito</div>
@@ -60,10 +75,33 @@
                 <div class="col-1">Azioni</div>
             </div>
 
+            <!-- Contenuto lista -->
             <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
                 <div class="col-6">I pilastri della terra</div>
                 <div class="col-3">-</div>
                 <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
+                <div class="col-1">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-pencil-fill"></i></button>
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-trash3-fill"></i></button>
+                    </div>
+                </div>
+                <div class="col-6">Il signore degli anelli</div>
+                <div class="col-3">18/10/2023</div>
+                <div class="col-2"><span class="badge text-bg-warning">In prestito</span></div>
+                <div class="col-1">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-pencil-fill"></i></button>
+                        <button type="button" class="btn btn-outline-secondary"><i
+                                class="bi bi-trash3-fill"></i></button>
+                    </div>
+                </div>
+                <div class="col-6">Il signore degli anelli</div>
+                <div class="col-3">18/10/2023</div>
+                <div class="col-2"><span class="badge text-bg-warning">In prestito</span></div>
                 <div class="col-1">
                     <div class="btn-group" role="group" aria-label="Basic outlined example">
                         <button type="button" class="btn btn-outline-secondary"><i
@@ -214,11 +252,81 @@
                 </div>
             </div>
 
+            <!-- Fine flex container -->
         </div>
+
+        <!-- Container per le card laterali -->
+        <div class="container-s me-5">
+
+            <!-- Card -->
+            <div class="card mb-5" style="width: 18rem;">
+                <div class="card-header fs-2">
+                    Todo
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card mb-5" style="width: 18rem;">
+                <div class="card-header fs-2">
+                    F.A.Q
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Checked checkbox
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Fine card container -->
+        </div>
+
+        <!-- Fine container section -->
     </section>
 
-
-
+    <!-- Script per bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
