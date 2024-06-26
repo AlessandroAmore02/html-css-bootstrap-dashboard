@@ -62,7 +62,7 @@
         <!-- Inizio container -->
         <div class="container border-primary">
 
-            <!-- Inizio container flex -->
+            <!-- Row titolo-->
             <div class="row mb-5 justify-content-between">
 
                 <!-- Titolo -->
@@ -76,169 +76,165 @@
                 </div>
             </div>
 
-            <!-- Header lista -->
-            <div class="row fs-6 text fw-bolder p-3">
-                <div class="col-6">Titolo</div>
-                <div class="col-3">Data prestito</div>
-                <div class="col-2">Stato</div>
-                <div class="col-1">Azioni</div>
-            </div>
+            <!-- Header Tabella -->
+            <table class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th scope="col">Titolo</th>
+                        <th scope=" col">Data prestito</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                    </tr>
+                </thead>
 
-            <!-- Contenuto lista -->
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">I pilastri della terra</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
+                <!-- Body tabella -->
+                <tbody>
+                    <tr>
+                        <td scope="row">I pilastri della terra</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Il signore degli anelli</th>
+                        <td>18/10/2023</td>
+                        <td><span class="badge text-bg-warning">In prestito</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Harry potter e la pietra filosofale</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Il codice Da Vinci</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Shining</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">La divina commedia</th>
+                        <td>21/09/2023</td>
+                        <td><span class="badge text-bg-warning">In prestito</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Il trono di spade</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Il mondo di Sofia</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</th>
+                        <td>25/07/2023</td>
+                        <td><span class="badge text-bg-warning">In prestito</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Il piccolo principe</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">La storia infinita</th>
+                        <td>-</td>
+                        <td><span class="badge text-bg-success">Disponibile</span></td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-pencil-fill"></i></button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="bi bi-trash3-fill"></i></button>
+                            </div>
+                        </td>
+                    </tr>
 
-            </div>
-
-            <div class="row p-3 fs-6 text">
-                <div class="col-6">Il signore degli anelli</div>
-                <div class="col-3">18/10/2023</div>
-                <div class="col-2"><span class="badge text-bg-warning">In prestito</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">Harry potter e la pietra filosofale</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row p-3 fs-6 text">
-                <div class="col-6">Il codice Da Vinci</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-danger">Non disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">Shining</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row p-3 fs-6 text">
-                <div class="col-6">La divina commedia</div>
-                <div class="col-3">21/09/2023</div>
-                <div class="col-2"><span class="badge text-bg-warning">In prestito</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">Il trono di spade</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row p-3 fs-6 text">
-                <div class="col-6">Il mondo di Sofia</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-danger">Non disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">Le cronache di Narnia: il leone, la strega e l'armadio</div>
-                <div class="col-3">25/07/2023</div>
-                <div class="col-2"><span class="badge text-bg-warning">In prestito</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row p-3 fs-6 text">
-                <div class="col-6">Il piccolo principe</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-secondary-subtle p-3 fs-6 text border-bottom border-top border-dark-subtle">
-                <div class="col-6">La storia infinita</div>
-                <div class="col-3">-</div>
-                <div class="col-2"><span class="badge text-bg-success">Disponibile</span></div>
-                <div class="col-1">
-                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-pencil-fill"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i
-                                class="bi bi-trash3-fill"></i></button>
-                    </div>
-                </div>
-            </div>
+                </tbody>
+            </table>
 
             <!-- Fine flex container -->
         </div>
