@@ -65,11 +65,11 @@
                 <!-- Nome e cognome -->
                 <div class="row mb-1">
                     <div class="col-lg-6">
-                        <div class="col">Nome Autore</div>
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <label for="first-name">Nome Autore</label>
+                        <input type="last-name" class="form-control" placeholder="First name" aria-label="First name">
                     </div>
                     <div class="col-lg-6">
-                        <div class="col">Cognome Autore</div>
+                        <label for="ISBN">Cognome Autore</label>
                         <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
                     </div>
 
@@ -79,7 +79,7 @@
                 <div class="row g-3 mb-1 mt-4">
 
                     <div class="col">
-                        <div class="col">Titolo</div>
+                        <label for="title">Titolo libro</label>
                         <input type="text" class="form-control" placeholder="Inserisci il titolo del libro"
                             aria-label="Title">
 
@@ -94,7 +94,7 @@
                 <!-- Genere -->
                 <div class="row mb-1 mt-4">
                     <div class="col-lg-4">
-                        <div class="col">Genere</div>
+                        <label for="genere">Genere#</label>
                         <form class="row gy-2 gx-3 align-items-center">
                             <label class="visually-hidden" for="autoSizingSelect">Preference</label>
                             <select class="form-select" id="autoSizingSelect">
@@ -108,13 +108,13 @@
 
                     <!-- Anno pubblicazione -->
                     <div class="col-lg-4">
-                        <div class="col">Anno di pubblicazione</div>
+                        <label for="date">Anno du pubblicazione</label>
                         <input type="text" class="form-control" placeholder="Inserisci l'anno" aria-label="Date">
                     </div>
 
                     <!-- ISBN -->
                     <div class="col-lg-4">
-                        <div class="col">ISBN#</div>
+                        <label for="ISBN">ISBN#</label>
                         <input type="text" class="form-control" placeholder="Inserisci il codice ISBN#"
                             aria-label="ISBN">
                     </div>
@@ -126,13 +126,10 @@
                 <!-- Textarea note -->
                 <div class="row mb-1 mt-4">
                     <div class="col">
-                        <div class="col">
-                            Note
-                        </div>
+                        <label for="floatingTextarea2">Note</label>
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Inserisci eventuali note sul libro"
                                 id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2"></label>
                         </div>
                     </div>
 
